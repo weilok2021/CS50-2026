@@ -8,7 +8,7 @@ int main(void) {
     do {
         height = get_int("Height: ");
     }
-    while(height <= 0);
+    while(height < 1 && height < 8);
 
     print_pyramid(height);
 }
@@ -25,7 +25,7 @@ void print_pyramid(int height) {
             printf("#");
         }
         printf(" ");
-        
+
         for (int j = 0; j < i + 1; j++) {
             printf("#");
         }
