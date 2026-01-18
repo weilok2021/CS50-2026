@@ -5,7 +5,6 @@ void print_pyramid(int height);
 
 int main(void) {
     int height;
-
     do {
         height = get_int("Height: ");
     }
