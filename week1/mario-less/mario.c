@@ -6,7 +6,8 @@ int main(void) {
     do {
         height = get_int("Height: ");
     }
-    while(height <= 0 )
+    while(height <= 0);
+    
 }
 
 void print_pyramid(int height) {
