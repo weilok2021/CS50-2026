@@ -2,8 +2,16 @@
 #include <stdio.h>
 
 int main(void) {
-    for (int i = 0; i < 5; i++) {
-        int num_spaces = 5 - (i+1);
+    int height;
+    do {
+        height = get_int("Height: ");
+    }
+    while(height <= 0 )
+}
+
+void print_pyramid(int height) {
+    for (int i = 0; i < height; i++) {
+        int num_spaces = height - (i + 1);
         while (num_spaces != 0) {
             printf(" ");
             num_spaces--;
