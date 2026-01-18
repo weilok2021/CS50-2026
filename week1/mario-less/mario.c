@@ -1,13 +1,15 @@
 #include <cs50.h>
 #include <stdio.h>
 
+void print_pyramid(int height);
+
 int main(void) {
     int height;
     do {
         height = get_int("Height: ");
     }
     while(height <= 0);
-    
+    print_pyramid(height);
 }
 
 void print_pyramid(int height) {
